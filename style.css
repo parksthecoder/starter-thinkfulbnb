@@ -44,6 +44,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -54,6 +55,8 @@ main img {
 .item-double {
   flex: 2;
 }
+
+
 
 /* -------  Navigation ------- */
 
@@ -94,10 +97,18 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+header nav ul li:last-child a {
+  /* Removes the margin to the right of the last anchor tag 
+     so that the nav appears centered. */
+  margin-right: 0;
+}
+
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
@@ -117,6 +128,12 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -144,92 +161,120 @@ for example the statament above says: IF the media on which this CSS is going to
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
   body {
-      /* border: 3px solid yellow; */
+    /* border: 3px solid yellow; */
   }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
   body {
-      /* border: 3px solid blue; */
+    /* border: 3px solid blue; */
   }
 }
 
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
   body {
-      /* border: 3px solid red; */
+    /* border: 3px solid red; */
   }
 }
 
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
   body {
-      /* border: 3px solid pink; */
+    /* border: 3px solid pink; */
   }
 }
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
   body {
-      /* border: 3px solid green; */
+    /* border: 3px solid green; */
   }
 }
 
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
   body {
-      /* border: 3px solid purple; */
+    /* border: 3px solid purple; */
   }
 }
-
 
 /* mobile first approach = (the website was built initialy for mobiles and it will be adapted for desktop)
 This is the ideal way to built websites because it is much easier to adapt from a small screen and low computing power (mobiles) to a large screen and high computing power (desktops)
 */
 
-
 /*iPhone portrait*/
 @media only screen and (min-width: 320px) {
   body {
-      /* border: 3px solid purple; */
+    /* border: 3px solid purple; */
   }
 }
 
 /*iPhone landscape*/
-@media only screen and (min-width: 480px) {
-  body {
-      /* border: 3px solid green; */
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
   }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 72px;
+    color: #fff;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    flex-direction: column;
+  }
+
   .group {
     flex-direction: row;
+    align-items: center;
   }
 }
 
 /*Android landscape*/
 @media only screen and (min-width: 640px) {
   body {
-      /* border: 3px solid pink; */
+    /* border: 3px solid pink; */
   }
 }
 
 /*iPad potrait*/
 @media only screen and (min-width: 768px) {
   body {
-      /* border: 3px solid red; */
+    /* border: 3px solid red; */
   }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
   body {
-      /* border: 3px solid blue; */
+    /* border: 3px solid blue; */
   }
 }
 
 /*large desktop*/
 @media only screen and (min-width: 1600px) {
   body {
-      /* border: 3px solid yellow; */
+    /* border: 3px solid yellow; */
   }
 }
