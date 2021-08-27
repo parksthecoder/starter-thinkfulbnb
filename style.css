@@ -106,10 +106,10 @@ form {
   flex-direction: column;
 }
 
-/* form > div {
+form > div {
   display: flex;
   justify-content: space-between;
-} */
+}
 
 form label {
   font-weight: bold;
@@ -260,9 +260,9 @@ This is the ideal way to built websites because it is much easier to adapt from 
 
 /*iPad potrait*/
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     border: 3px solid red;
-  }
+  } */
 }
 
 /*iPad lanscape / small laptop*/
