@@ -215,9 +215,9 @@ This is the ideal way to built websites because it is much easier to adapt from 
 /*iPhone landscape*/
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   header {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0 30px;
   }
@@ -254,11 +254,25 @@ This is the ideal way to built websites because it is much easier to adapt from 
 } */
 
 /*iPad potrait*/
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     border: 3px solid red;
   }
-} */
+  header {
+    display: block;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+}
 
 /*iPad lanscape / small laptop*/
 /* @media only screen and (min-width: 1024px) {
