@@ -252,7 +252,7 @@ This is the ideal way to built websites because it is much easier to adapt from 
     border: 3px solid pink;
   }
   header {
-    display: block;
+    display: flex;
     justify-content: space-between;
     padding: 0 30px;
   }
