@@ -252,7 +252,7 @@ This is the ideal way to built websites because it is much easier to adapt from 
     border: 3px solid pink;
   }
   header {
-    display: block;
+    display: flex;
     justify-content: space-between;
     padding: 0 30px;
   }
@@ -264,6 +264,20 @@ This is the ideal way to built websites because it is much easier to adapt from 
 
   header nav {
     margin-top: 8px;
+  }
+  
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    flex-direction: column;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
