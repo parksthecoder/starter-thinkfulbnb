@@ -206,11 +206,14 @@ This is the ideal way to built websites because it is much easier to adapt from 
 */
 
 /*iPhone portrait*/
-/* @media only screen and (min-width: 320px) {
-  body {
+@media only screen and (min-width: 320px) {
+  /* body {
     border: 3px solid purple;
+  } */
+  .logo {
+    font-size: 56px;
   }
-} */
+}
 
 /*iPhone landscape*/
 /* -------  Media Query ------- */
